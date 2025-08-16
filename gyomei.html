@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gyomei Himejima - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyomei Himejima - Hashira Profile</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px; }
-    img { max-width:400px; margin:10px; border-radius:10px; }
-    video { max-width:400px; margin:10px; border-radius:10px; }
-    a { color:#0af; text-decoration:none; }
+    body { background:black;color:white;font-family:Arial,sans-serif;padding:20px; }
+    h1 { text-align:center;color:#999999;text-shadow:0 0 12px #ffffff; }
+    h2 { border-bottom:2px solid #999999;margin-top:30px; }
+    img { max-width:300px;border:2px solid #999999;border-radius:12px;
+          box-shadow:0 0 15px rgba(200,200,200,0.7);display:block;margin:10px auto; }
+    iframe { display:block;margin:20px auto;border:2px solid #999999;border-radius:12px;
+             box-shadow:0 0 20px rgba(200,200,200,0.7); }
+    .content { max-width:800px;margin:auto; }
+    .back-button { display:block;width:fit-content;margin:30px auto;padding:10px 20px;
+                   background:#999999;color:black;text-decoration:none;font-weight:bold;
+                   border-radius:8px;box-shadow:0 0 10px rgba(200,200,200,0.9); }
+    .back-button:hover { background:#666666; }
   </style>
 </head>
 <body>
-  <h1>Gyomei Himejima</h1>
-  <div>
-    <img src="images/gyomei_portrait.jpg" alt="Gyomei Himejima portrait">
-    <img src="images/gyomei_art.jpg" alt="Gyomei Himejima official art">
-    <img src="images/gyomei_fanart.jpg" alt="Gyomei Himejima fanart">
-  </div>
-  <div>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
-  </div>
-  <p>Description placeholder for Gyomei Himejima.</p>
-  <p><a href="index.html">← Back to Hashira Profiles</a></p>
+<div class="content">
+  <h1>Gyomei Himejima (悲鳴嶼 行冥)</h1>
+  <h2>Official Portrait</h2>
+  <img src="https://i.pinimg.com/736x/d2/f8/a3/d2f8a38b0c91d186166e09d50d4276e5.jpg" alt="Gyomei Himejima">
+  <h2>About</h2>
+  <p>Gyomei Himejima is the Stone Hashira (岩柱, Iwa Bashira). Despite his blindess, Gyomei is considered the strongest Hashira in the Demon Slayer Corps. A kind soul who weeps easily, he is nonetheless a towering and fearsome warrior in battle.</p>
+  <h2>Fanart</h2>
+  <img src="images/gyomei_fanart.png" alt="Fanart of Gyomei Himejima">
+  <h2>Animatic</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/2k7oNnE9J9k" frameborder="0" allowfullscreen></iframe>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
+</div>
 </body>
 </html>
