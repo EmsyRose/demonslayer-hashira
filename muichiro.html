@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Muichiro Tokito - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muichiro Tokito - Hashira Profile</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px; }
-    img { max-width:400px; margin:10px; border-radius:10px; }
-    video { max-width:400px; margin:10px; border-radius:10px; }
-    a { color:#0af; text-decoration:none; }
+    body { background:black;color:white;font-family:Arial,sans-serif;padding:20px; }
+    h1 { text-align:center;color:#66ccff;text-shadow:0 0 12px #66ccff; }
+    h2 { border-bottom:2px solid #66ccff;margin-top:30px; }
+    img { max-width:300px;border:2px solid #66ccff;border-radius:12px;
+          box-shadow:0 0 15px rgba(102,204,255,0.7);display:block;margin:10px auto; }
+    iframe { display:block;margin:20px auto;border:2px solid #66ccff;border-radius:12px;
+             box-shadow:0 0 20px rgba(102,204,255,0.7); }
+    .content { max-width:800px;margin:auto; }
+    .back-button { display:block;width:fit-content;margin:30px auto;padding:10px 20px;
+                   background:#66ccff;color:black;text-decoration:none;font-weight:bold;
+                   border-radius:8px;box-shadow:0 0 10px rgba(102,204,255,0.9); }
+    .back-button:hover { background:#3399cc; }
   </style>
 </head>
 <body>
-  <h1>Muichiro Tokito</h1>
-  <div>
-    <img src="images/muichiro_portrait.jpg" alt="Muichiro Tokito portrait">
-    <img src="images/muichiro_art.jpg" alt="Muichiro Tokito official art">
-    <img src="images/muichiro_fanart.jpg" alt="Muichiro Tokito fanart">
-  </div>
-  <div>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
-  </div>
-  <p>Description placeholder for Muichiro Tokito.</p>
-  <p><a href="index.html">← Back to Hashira Profiles</a></p>
+<div class="content">
+  <h1>Muichiro Tokito (時透 無一郎)</h1>
+  <h2>Official Portrait</h2>
+  <img src="https://i.pinimg.com/originals/4b/4c/da/4b4cdabffc86c7fec06f62a06759ef7a.jpg" alt="Muichiro Tokito">
+  <h2>About</h2>
+  <p>Muichiro Tokito is the Mist Hashira (霞柱, Kasumi Bashira). Despite his airheaded and aloof nature, Muichiro is a genius swordsman who became a Hashira in just two months of training. He is deeply connected to the legacy of the Demon Slayer Corps.</p>
+  <h2>Fanart</h2>
+  <img src="images/muichiro_fanart.png" alt="Fanart of Muichiro Tokito">
+  <h2>Animatic</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/LnHjuhC0DQc" frameborder="0" allowfullscreen></iframe>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
+</div>
 </body>
 </html>
