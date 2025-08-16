@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mitsuri Kanroji - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitsuri Kanroji - Hashira Profile</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px; }
-    img { max-width:400px; margin:10px; border-radius:10px; }
-    video { max-width:400px; margin:10px; border-radius:10px; }
-    a { color:#0af; text-decoration:none; }
+    body { background:black;color:white;font-family:Arial,sans-serif;padding:20px; }
+    h1 { text-align:center;color:#ff66b2;text-shadow:0 0 12px #ff66b2; }
+    h2 { border-bottom:2px solid #ff66b2;margin-top:30px; }
+    img { max-width:300px;border:2px solid #ff66b2;border-radius:12px;
+          box-shadow:0 0 15px rgba(255,102,178,0.7);display:block;margin:10px auto; }
+    iframe { display:block;margin:20px auto;border:2px solid #ff66b2;border-radius:12px;
+             box-shadow:0 0 20px rgba(255,102,178,0.7); }
+    .content { max-width:800px;margin:auto; }
+    .back-button { display:block;width:fit-content;margin:30px auto;padding:10px 20px;
+                   background:#ff66b2;color:black;text-decoration:none;font-weight:bold;
+                   border-radius:8px;box-shadow:0 0 10px rgba(255,102,178,0.9); }
+    .back-button:hover { background:#ff3399; }
   </style>
 </head>
 <body>
-  <h1>Mitsuri Kanroji</h1>
-  <div>
-    <img src="images/mitsuri_portrait.jpg" alt="Mitsuri Kanroji portrait">
-    <img src="images/mitsuri_art.jpg" alt="Mitsuri Kanroji official art">
-    <img src="images/mitsuri_fanart.jpg" alt="Mitsuri Kanroji fanart">
-  </div>
-  <div>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
-  </div>
-  <p>Description placeholder for Mitsuri Kanroji.</p>
-  <p><a href="index.html">← Back to Hashira Profiles</a></p>
+<div class="content">
+  <h1>Mitsuri Kanroji (甘露寺 蜜璃)</h1>
+  <h2>Official Portrait</h2>
+  <img src="https://i.pinimg.com/736x/28/64/30/286430e453fdba0a79e05b78528fe59e.jpg" alt="Mitsuri Kanroji">
+  <h2>About</h2>
+  <p>Mitsuri Kanroji is the Love Hashira (恋柱, Koi Bashira). She is cheerful, kind, and emotional, yet possesses immense strength and unique sword techniques fueled by her passion. Her unusual muscular density makes her incredibly powerful despite her gentle appearance.</p>
+  <h2>Fanart</h2>
+  <img src="images/mitsuri_fanart.png" alt="Fanart of Mitsuri Kanroji">
+  <h2>Animatic</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KdCSG0QpFOU" frameborder="0" allowfullscreen></iframe>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
+</div>
 </body>
 </html>
