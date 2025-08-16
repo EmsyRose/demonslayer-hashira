@@ -2,28 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shinobu Kocho - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinobu Kocho - Hashira Profile</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px; }
-    img { max-width:400px; margin:10px; border-radius:10px; }
-    video { max-width:400px; margin:10px; border-radius:10px; }
-    a { color:#0af; text-decoration:none; }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b266ff; /* Shinobu’s butterfly purple */
+      text-shadow: 0 0 12px #b266ff;
+    }
+
+    h2 {
+      border-bottom: 2px solid #b266ff;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    img {
+      max-width: 300px;
+      border: 2px solid #b266ff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(178,102,255,0.7);
+      display: block;
+      margin: 10px auto;
+    }
+
+    iframe {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #b266ff;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(178,102,255,0.7);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0 auto;
+      padding: 10px 20px;
+      background-color: #b266ff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(178,102,255,0.9);
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #9933ff;
+      box-shadow: 0 0 15px rgba(178,102,255,1);
+    }
   </style>
 </head>
 <body>
-  <h1>Shinobu Kocho</h1>
-  <div>
-    <img src="images/shinobu_portrait.jpg" alt="Shinobu Kocho portrait">
-    <img src="images/shinobu_art.jpg" alt="Shinobu Kocho official art">
-    <img src="images/shinobu_fanart.jpg" alt="Shinobu Kocho fanart">
+  <div class="content">
+    <h1>Shinobu Kocho (胡蝶 しのぶ)</h1>
+
+    <h2>Official Portrait</h2>
+    <img src="https://static.zerochan.net/Kochou.Shinobu.full.2883180.jpg" alt="Shinobu Kocho">
+
+    <h2>About</h2>
+    <p>Shinobu Kocho is the Insect Hashira (蟲柱, Mushibashira) of the Demon Slayer Corps. Known for her graceful yet deadly fighting style, she uses poison-coated blades to slay demons. Despite her soft-spoken and kind demeanor, Shinobu harbors a deep hatred for demons due to her family’s tragic fate.</p>
+
+    <h2>Fanart</h2>
+    <img src="images/shinobu_fanart.png" alt="Fanart of Shinobu Kocho">
+
+    <h2>Animatic</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JZ9t2dP-9Rk" frameborder="0" allowfullscreen></iframe>
+
+    <!-- Back button -->
+    <a href="index.html" class="back-button">← Back to Hashira</a>
   </div>
-  <div>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
-  </div>
-  <p>Description placeholder for Shinobu Kocho.</p>
-  <p><a href="index.html">← Back to Hashira Profiles</a></p>
 </body>
 </html>
