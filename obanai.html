@@ -2,28 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Obanai Iguro - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obanai Iguro - Hashira Profile</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color:#111; color:white; font-family:sans-serif; text-align:center; padding:20px; }
-    img { max-width:400px; margin:10px; border-radius:10px; }
-    video { max-width:400px; margin:10px; border-radius:10px; }
-    a { color:#0af; text-decoration:none; }
+    body { background:black;color:white;font-family:Arial,sans-serif;padding:20px; }
+    h1 { text-align:center;color:#cccccc;text-shadow:0 0 12px #00ffcc; }
+    h2 { border-bottom:2px solid #cccccc;margin-top:30px; }
+    img { max-width:300px;border:2px solid #00ffcc;border-radius:12px;
+          box-shadow:0 0 15px rgba(0,255,204,0.7);display:block;margin:10px auto; }
+    iframe { display:block;margin:20px auto;border:2px solid #00ffcc;border-radius:12px;
+             box-shadow:0 0 20px rgba(0,255,204,0.7); }
+    .content { max-width:800px;margin:auto; }
+    .back-button { display:block;width:fit-content;margin:30px auto;padding:10px 20px;
+                   background:#00ffcc;color:black;text-decoration:none;font-weight:bold;
+                   border-radius:8px;box-shadow:0 0 10px rgba(0,255,204,0.9); }
+    .back-button:hover { background:#00cc99; }
   </style>
 </head>
 <body>
-  <h1>Obanai Iguro</h1>
-  <div>
-    <img src="images/obanai_portrait.jpg" alt="Obanai Iguro portrait">
-    <img src="images/obanai_art.jpg" alt="Obanai Iguro official art">
-    <img src="images/obanai_fanart.jpg" alt="Obanai Iguro fanart">
-  </div>
-  <div>
-    <video controls>
-      <source src="videos/sample.mp4" type="video/mp4">
-      Your browser does not support video.
-    </video>
-  </div>
-  <p>Description placeholder for Obanai Iguro.</p>
-  <p><a href="index.html">← Back to Hashira Profiles</a></p>
+<div class="content">
+  <h1>Obanai Iguro (伊黒 小芭内)</h1>
+  <h2>Official Portrait</h2>
+  <img src="https://i.pinimg.com/originals/ad/18/59/ad1859b740f58083ee12a76674778adc.jpg" alt="Obanai Iguro">
+  <h2>About</h2>
+  <p>Obanai Iguro is the Serpent Hashira (蛇柱, Hebi Bashira). Stern, strict, and often harsh, Obanai nevertheless has a strong sense of justice and unwavering loyalty to the Demon Slayer Corps. His unique sword style mimics the slithering of snakes.</p>
+  <h2>Fanart</h2>
+  <img src="images/obanai_fanart.png" alt="Fanart of Obanai Iguro">
+  <h2>Animatic</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9XoF0zzakV0" frameborder="0" allowfullscreen></iframe>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
+</div>
 </body>
 </html>
