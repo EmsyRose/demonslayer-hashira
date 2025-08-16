@@ -2,90 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giyu Tomioka - Hashira Profile</title>
+  <title>Giyuu Tomioka - Hashira Profile</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-color: black;
       color: white;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
       text-align: center;
-      color: #4fa3f7; /* Giyu's blue */
-      text-shadow: 0 0 10px #4fa3f7;
     }
-
-    h2 {
-      border-bottom: 2px solid #4fa3f7;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    img {
-      max-width: 300px;
-      border: 2px solid #4fa3f7;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(79,163,247,0.6);
-      display: block;
-      margin: 10px auto;
-    }
-
-    iframe {
-      display: block;
-      margin: 20px auto;
-      border: 2px solid #4fa3f7;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(79,163,247,0.6);
-    }
-
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-
     .back-button {
-      display: block;
-      width: fit-content;
-      margin: 30px auto 0 auto;
+      display: inline-block;
+      margin: 20px;
       padding: 10px 20px;
-      background-color: #4fa3f7;
-      color: black;
+      background: #1e3a8a; /* deep blue */
+      color: white;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(79,163,247,0.8);
-      transition: background-color 0.3s, box-shadow 0.3s;
     }
-
     .back-button:hover {
-      background-color: #2c82d3;
-      box-shadow: 0 0 15px rgba(79,163,247,1);
+      background: #3b82f6;
+    }
+    img {
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(59,130,246,0.6);
+    }
+    iframe {
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(59,130,246,0.6);
+    }
+    .art-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .animatics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Giyu Tomioka (冨岡 義勇)</h1>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
 
-    <h2>Official Portrait</h2>
-    <img src="https://s1.zerochan.net/Tomioka.Giyuu.600.4068803.jpg" alt="Giyu Tomioka">
+  <h1>Giyuu Tomioka (冨岡 義勇)</h1>
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Giyu_Tomioka.png" alt="Giyuu Portrait">
 
-    <h2>About</h2>
-    <p>Giyu Tomioka is the Water Hashira (水柱, Mizubashira) of the Demon Slayer Corps. Calm, stoic, and powerful, he is a master of the Water Breathing techniques. Though reserved, he is deeply compassionate and plays a vital role in guiding Tanjiro and Nezuko.</p>
+  <h2>Official Arts & Fanarts</h2>
+  <div class="art-gallery">
+    <img src="https://i.pinimg.com/564x/0d/24/63/0d2463f84c94b42d0132283381f303bb.jpg" alt="Fanart 1">
+    <img src="https://i.pinimg.com/564x/5e/d8/fd/5ed8fd54a4a3bc8b82d4e6c746b2d7fd.jpg" alt="Fanart 2">
+  </div>
 
-    <h2>Fanart</h2>
-    <img src="images/giyuu_fanart.png" alt="Fanart of Giyu Tomioka">
+  <h2>Animatics</h2>
+  <div class="animatics">
+    <!-- First Animatic -->
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/TRSrb1rytv4"
+      title="Lyn Lapid | Tomioka Giyuu Animatic"
+      frameborder="0" allowfullscreen>
+    </iframe>
 
-    <h2>Animatic</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/II2XMT9xjyQ" frameborder="0" allowfullscreen></iframe>
-
-    <!-- Back button -->
-    <a href="index.html" class="back-button">← Back to Hashira</a>
+    <!-- Second Animatic -->
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/2QHjgmauMlc"
+      title="Tomioka’s Goodbye [Fan Animation]"
+      frameborder="0" allowfullscreen>
+    </iframe>
   </div>
 </body>
 </html>
