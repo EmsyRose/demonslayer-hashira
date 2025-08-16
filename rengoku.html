@@ -2,90 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kyojuro Rengoku - Hashira Profile</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #ff9933; /* Rengoku’s flame orange */
-      text-shadow: 0 0 12px #ff9933;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ff9933;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    img {
-      max-width: 300px;
-      border: 2px solid #ff9933;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255,153,51,0.7);
-      display: block;
-      margin: 10px auto;
-    }
-
-    iframe {
-      display: block;
-      margin: 20px auto;
-      border: 2px solid #ff9933;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255,153,51,0.7);
-    }
-
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .back-button {
-      display: block;
-      width: fit-content;
-      margin: 30px auto 0 auto;
-      padding: 10px 20px;
-      background-color: #ff9933;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255,153,51,0.9);
-      transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-    .back-button:hover {
-      background-color: #e67e00;
-      box-shadow: 0 0 15px rgba(255,153,51,1);
-    }
+    body { background-color: black; color: white; font-family: Arial, sans-serif; text-align: center; }
+    .back-button { display:inline-block; margin:20px; padding:10px 20px; background:#b45309; color:white; border-radius:8px; text-decoration:none; font-weight:bold; }
+    .back-button:hover { background:#f97316; }
+    img { max-width:300px; margin:10px; border-radius:12px; box-shadow:0 0 15px rgba(249,115,22,0.6); }
+    iframe { margin:10px; border-radius:12px; box-shadow:0 0 15px rgba(249,115,22,0.6); }
+    .art-gallery, .animatics { display:flex; flex-wrap:wrap; justify-content:center; }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Kyojuro Rengoku (煉獄 杏寿郎)</h1>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
 
-    <h2>Official Portrait</h2>
-    <img src="https://i.pinimg.com/736x/27/bf/75/27bf750ae21a6273482a7931176ee6f6.jpg" alt="Kyojuro Rengoku">
+  <h1>Kyojuro Rengoku (煉獄 杏寿郎)</h1>
+  <img src="https://i.pinimg.com/736x/27/bf/75/27bf750ae21a6273482a7931176ee6f6.jpg" alt="Rengoku Portrait">
 
-    <h2>About</h2>
-    <p>Kyojuro Rengoku is the Flame Hashira (炎柱, Enbashira) of the Demon Slayer Corps. Known for his passionate spirit, unwavering sense of justice, and burning determination, Rengoku embodies the brightness and strength of flame. He is a mentor and source of inspiration to many Demon Slayers.</p>
+  <h2>Official Arts & Fanarts</h2>
+  <div class="art-gallery">
+    <img src="https://i.pinimg.com/564x/5d/52/f7/5d52f7d1f81c44402e43f89d5f71a38f.jpg" alt="Rengoku Art 1">
+    <img src="https://i.pinimg.com/564x/6f/0a/cc/6f0accb44e5ac94e9f7bc72d47266f31.jpg" alt="Rengoku Art 2">
+  </div>
 
-    <h2>Fanart</h2>
-    <img src="images/rengoku_fanart.png" alt="Fanart of Kyojuro Rengoku">
-
-    <h2>Animatic</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_Rb-X9MsZM" frameborder="0" allowfullscreen></iframe>
-
-    <!-- Back button -->
-    <a href="index.html" class="back-button">← Back to Hashira</a>
+  <h2>Animatics</h2>
+  <div class="animatics">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_Rb-X9MsZM" title="Rengoku Fight Animatic" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WqswNyptN3s" title="Emotional Rengoku Fan Animation" frameborder="0" allowfullscreen></iframe>
   </div>
 </body>
 </html>
