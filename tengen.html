@@ -2,90 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tengen Uzui - Hashira Profile</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #ff3333; /* Flashy red */
-      text-shadow: 0 0 12px #ffd700, 0 0 20px #ff3333;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ff3333;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    img {
-      max-width: 300px;
-      border: 2px solid #ffd700; /* Gold border for flashiness */
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255,215,0,0.8);
-      display: block;
-      margin: 10px auto;
-    }
-
-    iframe {
-      display: block;
-      margin: 20px auto;
-      border: 2px solid #ff3333;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255,51,51,0.7);
-    }
-
-    .content {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .back-button {
-      display: block;
-      width: fit-content;
-      margin: 30px auto 0 auto;
-      padding: 10px 20px;
-      background-color: #ff3333;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(255,51,51,0.9);
-      transition: background-color 0.3s, box-shadow 0.3s;
-    }
-
-    .back-button:hover {
-      background-color: #cc0000;
-      box-shadow: 0 0 15px rgba(255,51,51,1);
-    }
+    body { background-color: black; color: white; font-family: Arial, sans-serif; text-align: center; }
+    .back-button { display:inline-block; margin:20px; padding:10px 20px; background:#047857; color:white; border-radius:8px; text-decoration:none; font-weight:bold; }
+    .back-button:hover { background:#10b981; }
+    img { max-width:300px; margin:10px; border-radius:12px; box-shadow:0 0 15px rgba(16,185,129,0.6); }
+    iframe { margin:10px; border-radius:12px; box-shadow:0 0 15px rgba(16,185,129,0.6); }
+    .art-gallery, .animatics { display:flex; flex-wrap:wrap; justify-content:center; }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h1>Tengen Uzui (宇髄 天元)</h1>
+  <a href="index.html" class="back-button">← Back to Hashira</a>
 
-    <h2>Official Portrait</h2>
-    <img src="https://s1.zerochan.net/Kimetsu.no.Yaiba.600.3642085.jpg" alt="Tengen Uzui">
+  <h1>Tengen Uzui (宇髄 天元)</h1>
+  <img src="https://s1.zerochan.net/Kimetsu.no.Yaiba.600.3642085.jpg" alt="Tengen Portrait">
 
-    <h2>About</h2>
-    <p>Tengen Uzui is the Sound Hashira (音柱, Oto Bashira) of the Demon Slayer Corps. Known for his flamboyant and “flashy” personality, he values extravagance and style even in battle. A former shinobi, Tengen combines speed, strength, and sound techniques to overwhelm his enemies.</p>
+  <h2>Official Arts & Fanarts</h2>
+  <div class="art-gallery">
+    <img src="https://i.pinimg.com/564x/3e/34/8f/3e348f3dbce99b8c43877c56fb16ddae.jpg" alt="Tengen Art 1">
+    <img src="https://i.pinimg.com/564x/34/d0/35/34d03579e9c60f2caa52e51f07b2ec23.jpg" alt="Tengen Art 2">
+  </div>
 
-    <h2>Fanart</h2>
-    <img src="images/tengen_fanart.png" alt="Fanart of Tengen Uzui">
-
-    <h2>Animatic</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q71oTv72ILs" frameborder="0" allowfullscreen></iframe>
-
-    <!-- Back button -->
-    <a href="index.html" class="back-button">← Back to Hashira</a>
+  <h2>Animatics</h2>
+  <div class="animatics">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q71oTv72ILs" title="Tengen Fight Animation" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0e2Wsk8IgNU" title="Tengen Fan Animation" frameborder="0" allowfullscreen></iframe>
   </div>
 </body>
 </html>
