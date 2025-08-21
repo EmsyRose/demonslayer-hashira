@@ -115,7 +115,6 @@
     let current = 0;
     let scores = { Water:0, Flame:0, Love:0, Mist:0, Serpent:0, Wind:0, Stone:0, Insect:0, Sound:0 };
 
-    // Shuffle answers
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -133,7 +132,7 @@
       answersDiv.innerHTML = "";
 
       const keys = Object.keys(q.a);
-      shuffleArray(keys); // Shuffle the answer order
+      shuffleArray(keys); // Shuffle answer buttons
 
       for (let key of keys) {
         const btn = document.createElement("button");
@@ -156,10 +155,25 @@
         "Insect": { text:"🦋 You’re Shinobu Kocho: witty, graceful, and sharp.", img:"https://i.imgur.com/ek6Uy6P.png" },
         "Sound": { text:"🎶 You’re Tengen Uzui: flashy, confident, and larger than life!", img:"https://i.imgur.com/tlRcY8n.png" }
       };
+
       document.getElementById("quiz").innerHTML = `
         <h2>${messages[best].text}</h2>
         <img src="${messages[best].img}" alt="${best} Hashira">
+        <br><br>
+        <button id="restart">Retake Quiz</button>
       `;
+
+      document.getElementById("restart").onclick = () => {
+        current = 0;
+        for (let key in scores) scores[key] = 0;
+        document.getElementById("quiz").innerHTML = `
+          <div id="progress"></div>
+          <div id="question-container"></div>
+          <div class="answers" id="answers"></div>
+          <div id="result"></div>
+        `;
+        showQuestion();
+      };
     }
 
     showQuestion();
